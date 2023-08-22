@@ -1,0 +1,5 @@
+syms y(x);
+od = diff(y,x)==(sqrt(1-y^2))/(sqrt(1-x^2));
+c1 = y(0) == sqrt(3)/2;
+ys = dsolve(od,c1);
+disp(ys);
